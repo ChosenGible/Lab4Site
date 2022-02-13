@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>temperatures</title>
+</head>
+<body>
+    <p><a href="index.html">Return to readings</a></p>
+    <span>Current Sensor Name:</span>
+    <span id="sensorName"></span>
+    <p>New Sensor Name:</p>
+    <input id="newSensorNameInput" type=text>
+    <br>
+    <br>
+    <br>
+    <span>Current Sensor Location:</span>
+    <span id="sensorLocation"></span>
+    <p>New Sensor Location:</p>
+    <input id="newSensorLocationInput" type=text>
+    <br>
+    <br>
+    <br>
+    <span>Current Sensor Max Temperature Threshold:</span>
+    <span id="sensorThreshold"></span>
+    <p>New Sensor Max Temperature Threshold:</p>
+    <input id="newSensorThresholdInput" type=number>
+    <br>
+    <br>
+    <br>
+    <button id="submit">Submit</button>
+
+    <script src="../js/fetchProfile.js"></script>
+    <script src="../js/updateProfile.js"></script>
+</body>

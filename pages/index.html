@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>temperatures</title>
+</head>
+<body>
+    <p><a href="updateSensor.html">Updata Sensor Metadata</a></p>
+    <p>Temperatures</p>
+    
+    <span>Current Temp: </span>
+    <span id="currTemp">null</span>
+
+    <p>Recently Recorded Temperatures:</p>
+    <ul id="tempList"></ul>
+
+    <p>Recently Recorded Temperature Violations:</p>
+    <ul id="violList"></ul>
+
+    <script src="../js/getCurrentTemp.js"></script>
+    <script src="../js/getRecordedTemps.js"></script>
+    <script src="../js/getRecordedViolations.js"></script>
+</body>
