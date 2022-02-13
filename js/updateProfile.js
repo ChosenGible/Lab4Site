@@ -16,7 +16,7 @@ async function updateProfile(){
     newSThresh = document.getElementById("newSensorThresholdInput").value;
     newSPhone = document.getElementById("newSensorPhoneInput").value;
 
-    response = await raisePicoEvent(baseURI + eci + '/' + eid + '/' + domain + '/' + type + "?sensorName=" + newSName + "&sensorLocation=" + newSLoc + "&threshold=" + newSThresh + "&phone=" + newSPhone);
+    response = await raisePicoEvent(baseURI + eci + '/' + eid + '/' + domain + '/' + type + "?sensorName=" + newSName + "&sensorLocation=" + newSLoc + "&threshold=" + newSThresh + "&phoneNumber=" + newSPhone);
 
     console.log(response);
 }
