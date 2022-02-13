@@ -12,10 +12,12 @@ async function fetchProfile(){
     sName = await queryPico(baseURI + eci + '/' + ruleset + "/sensor_name");
     sLoc = await queryPico(baseURI + eci + '/' + ruleset + "/sensor_location");
     sThresh = await queryPico(baseURI + eci + '/' + ruleset + "/sensor_threshold");
+    sPhone = await queryPico(baseURI + eci + '/' + ruleset + "/alert_phone");
 
     document.getElementById("sensorName").innerText = sName;
     document.getElementById("sensorLocation").innerText = sLoc;
     document.getElementById("sensorThreshold").innerText = sThresh;
+    document.getElementById("sensorPhone").innerText = sPhone;
 }
 
 fetchProfile();

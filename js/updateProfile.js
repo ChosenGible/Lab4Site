@@ -14,8 +14,9 @@ async function updateProfile(){
     newSName = document.getElementById("newSensorNameInput").value;
     newSLoc = document.getElementById("newSensorLocationInput").value;
     newSThresh = document.getElementById("newSensorThresholdInput").value;
+    newSPhone = document.getElementById("newSensorPhoneInput").value;
 
-    response = await raisePicoEvent(baseURI + eci + '/' + eid + '/' + domain + '/' + type + "?sensorName=" + newSName + "&sensorLocation=" + newSLoc + "&threshold=" + newSThresh);
+    response = await raisePicoEvent(baseURI + eci + '/' + eid + '/' + domain + '/' + type + "?sensorName=" + newSName + "&sensorLocation=" + newSLoc + "&threshold=" + newSThresh + "&phone=" + newSPhone);
 
     console.log(response);
 }
